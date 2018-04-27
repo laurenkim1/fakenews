@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route('/', methods=['POST'])
 def result():
     text = request.form['story'] # should display 'bar'
-    print text
+    print(text)
     return 'Received !' # response to your request.
 
 if __name__ == "__main__":
